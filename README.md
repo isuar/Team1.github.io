@@ -2,7 +2,7 @@
 
 Welcome to the **Team Website** repository! This project showcases our team's expertise, members, and work. The website is designed to provide an overview of who we are and the services we offer, along with an "About Us" section and individual team member profiles.
 
-## [Demo Link](https://dopefolio.netlify.app) 🔗
+## [Demo Link](https://) 🔗
 
 ## Features 🚀
 
@@ -45,7 +45,7 @@ From your command line, first clone the project:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/rammcodes/Team1
+$ git clone https://github.com/rammcodes/Team1.github.io
 
 # Go into the repository
 $ cd Team1
