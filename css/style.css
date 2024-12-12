@@ -18,7 +18,8 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: inherit; }
+  font-family: 'Nunito', sans-serif; 
+  }
 
 html {
   font-size: 62.5%;
@@ -246,34 +247,151 @@ textarea {
     margin-top: 5rem;
     text-align: center; }
 
-.about {
-  background: #fafafa; }
-  .about__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
-    @media only screen and (max-width: 56.25em) {
-      .about__content {
-        grid-template-columns: 1fr;
-        grid-gap: 8rem; } }
-    .about__content-title {
-      font-weight: 700;
-      font-size: 2.8rem;
-      margin-bottom: 3rem; }
-      @media only screen and (max-width: 37.5em) {
-        .about__content-title {
-          font-size: 2.4rem; } }
-    .about__content-details-para {
-      font-size: 1.8rem;
-      color: grey;
-      max-width: 60rem;
-      line-height: 1.7;
-      margin-bottom: 1rem; }
-      .about__content-details-para--hl {
-        font-weight: 700;
-        margin: 0 3px; }
-      .about__content-details-para:last-child {
-        margin-bottom: 4rem; }
+
+    .about {
+      background-color: #fafafa;
+      padding: 4rem 2rem;
+    }
+    
+    .about__content {
+      max-width: 1380px;
+      margin: auto;
+      text-align: center;
+    }
+    
+    .team-head-text {
+      font-size: 48px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 50px;
+      margin-bottom: 50px;
+      color: #333;
+    }
+    
+    .responsive-container-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: auto;
+    }
+    
+    .card-container {
+      width: 280px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 30px 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-container:hover {
+      transform: translateY(-5px);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 25px;
+    }
+    
+    .team-image-wrapper {
+      clip-path: circle(50% at 50% 50%);
+      width: 130px;
+      height: 130px;
+      margin: auto;
+    }
+    
+    .team-member-image {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .name {
+      font-size: 18px;
+      font-weight: 800;
+      margin-top: 20px;
+      color: #333;
+    }
+    
+    .position {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .feature-text {
+      font-size: 14px;
+      color: rgb(122, 122, 122);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .social-icons a {
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: #0062b9;
+    }
+    
+    .github-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .github-section a {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+    
+    .github-section a:hover {
+      background-color: #555;
+    }
+    
+    @media (max-width: 768px) {
+      .responsive-container-block {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .card-container {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .team-head-text {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    
+      .card-container {
+        padding: 20px;
+      }
+    
+      .name {
+        font-size: 16px;
+      }
+    
+      .position {
+        font-size: 14px;
+      }
+    }
+
+
+/* Improved styling for the contact form */
 
 .projects__row {
   display: grid;
@@ -693,6 +811,9 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
+
+
+    
 @keyframes wheel {
   to {
     opacity: 0;
